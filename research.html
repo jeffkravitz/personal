@@ -1,7 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <title>Jeff Kravitz</title>
     <link href='https://fonts.googleapis.com/css?family=K2D' rel='stylesheet'>
+    <link rel="stylesheet" href="fontawesome/css/fontawesome.css">
+    <link rel="stylesheet" href="fontawesome/css/brands.css">
+    <link rel="stylesheet" href="fontawesome/css/solid.css">
+    <link rel="shortcut icon" href="docs/site_favicon.png">
+
     <style>
 
       body {
@@ -45,88 +51,160 @@
       .topnav a:hover {
         background-color: #ddd;
         color: #333333;
+        transition: 0.4s;
       }
 
       .topnav a.active {
         background-color: #70ABAF;
         color: #f2f2f2;
       }
+
+      .accordion {
+        background-color: #333333;
+        color: #f2f2f2;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+        transition: 0.4s;
+        border-right: solid;
+        border-left: solid;
+        border-right-width: 3px;
+        border-left-width: 3px;
+        border-color: #333333;
+      }
+
+      .top-accordion {
+        border-top: solid;
+        border-top-width: 5px;
+        border-color: #333333;
+      }
+
+      .accordion-right {
+        float: right;
+      }
+
+      .active, .accordion:hover {
+        background-color: #70ABAF;
+      }
+
+      .panel {
+        padding: 0 18px;
+        background-color: #f2f2f2;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.6s ease-out;
+        border-style: solid;
+        border-color: #333333;
+      }
+      
       </style>
     </head>
 
     <body>
 
         <div class="topnav">
-            <c>Kravitz</c>
-            <a href="index.html">Home</a>
-            <a class="active" href="research.html">Research</a>
-            <a href="writing.html">Writing</a>
-            <a href="docs/Kravitz_CV.pdf">CV</a>
+          <c>Kravitz</c>
+          <a href="index.html"><span class="fas fa-torii-gate"></span>&ensp; Home</a>
+          <a class="active" href="research.html"><span class="fas fa-brain"></span>&ensp; Research</a>
+          <a href="writing.html"><span class="fas fa-feather-alt"></span>&ensp; Writing</a>
+          <a href="coding.html"><span class="fas fa-code"></span>&ensp; Coding</a>
+          <a href="docs/Kravitz_CV.pdf"><span class="fas fa-file-alt"></span >&ensp; CV</a>
         </div>
 
         <div style="padding-top:10px; padding-left:22px">
-            <h1 class="title">Graduate Research</h1>
+            <h1 class="title">Research</h1>
         </div>
         <hr color=#70ABAF>
-        <p>
-            <h3>Moral Judgment and Emotion</h3>
-            My thesis research at Brooklyn College focused on the distinct social functions of 
-            moral disgust and anger. Specifically, I theorized that anger, an approach-tendency 
-            emotion, causes us to engage with those who have transgressed to elicit behavioral 
-            changes in the transgressor, placing us in immediate precarious situations but 
-            maximizing positive outcomes in the future. In contrast, when a transgressor has 
-            stable, negative traits (bad moral character) the likelihood of inciting behavioral 
-            change decreases, and the avoidance-tendencies of disgust instead function to withdraw 
-            from the transgressor, reducing the likelihood of becoming the target of future 
-            immoral behavior.<br><br>
-            <hr color=#70ABAF>
-        </p>
-        <p>
-            <h3>Moral Judgment, Stress, and Mindfulness</h3>
-            In a second line of research, I am currently developing a study that aims to 
-            determine whether automatic processes such as stress have a causal role in moral 
-            judgment or if they are merely the result of such judgment. This study utilizes 
-            false physiological feedback to test the hypothesis that perceived stress causes 
-            more severe moral judgment. In the experiment, participants wear headphones and 
-            are told that they are listening to their own heartbeat; in reality, they are 
-            randomly assigned to hear either a fast or normal heartbeat. I hypothesize that 
-            participants in the fast-heartbeat condition will attribute their perceived stress 
-            response to moral transgressions presented in a vignette, and thus judge them more 
-            severely. Further, I hypothesize that this effect will be moderated by mindfulness 
-            such that people high in mindfulness will be aware of and non-reactive to their 
-            physiological feedback, and thus judge less severely than those lower in mindfulness.
-            <br>
-
-        </p>
-        <div style="padding-top:10px; padding-left:22px">
-            <h1 class="title">Undergraduate Research</h1>
+        
+        <div class="article" style="padding-top:10px; padding-left:22px;">
+          My past research has focused on topics including moral judgment, emotion, stress, mindfulness, and 
+          decision making. These projects have drawn upon social, cognitive, and evolutionary psychology in order
+          to produce impactful multidisciplinary research. 
         </div>
-        <hr color=#70ABAF>
-        <p>
-            <h3>Mindfulness Meditation and Decision Making</h3>
-            In Stony Brook University’s Psychology Honors Program, I conducted independent 
-            research under the guidance of my mentor and research advisor Dr. Nancy Franklin. 
-            My honors project focused on whether mindfulness meditation can reduce inherent bias in 
-            decision-making. People have the tendeny to devalue future rewards, a phenomenon known as 
-            delay discounting. Delay discounting is widely used as a measure of impulsivity. Mindfulness 
-            meditation is a practice that emphasizes a present-focused, non-reactive awareness of one’s 
-            experiences; in essence, control over one’s attention and emotions. I hypothesized that a 
-            single session of guided mindfulness meditation would reduce delay discounting rates by 
-            causing people to be non-reactive to their impulses. The results of the study supported 
-            this idea.
-            <br><br>
-            <hr color=#70ABAF>
-        </p>
-        <p>
-            <h3>Anger and Boundary Extension</h3>
-            As my introduction to psychology research as an undergraduate, I worked in Dr. Nancy 
-            Franklin’s memory lab. In the lab, I worked on a project that aimed to determine the 
-            effect of anger on memory through the use of a boundary extension paradigm. The primary 
-            hypothesis of this study was that anger, an approach-tendency emotion, causes people to 
-            focus on central aspects of experience, and would thus cause recognition of a zoomed-in 
-            version of an original image.<br><br><br><br>
-        </p>
+        </br></br>
 
+        <button class="accordion top-accordion">Moral Judgment and Emotion<div class="accordion-right">Brooklyn College</div></button>
+        <div class="panel">
+          <p>
+              My thesis research at Brooklyn College focused on the distinct social functions of 
+              disgust and anger in morality. Specifically, I theorized that anger, an approach-tendency 
+              emotion, causes us to engage with those who have transgressed to elicit behavioral 
+              changes in the transgressor, placing us in immediate precarious situations but 
+              maximizing positive outcomes in the future. In contrast, when a transgressor has 
+              stable, negative traits (bad moral character) the likelihood of inciting behavioral 
+              change decreases, and the avoidance-tendencies of disgust instead function to withdraw 
+              from the transgressor, reducing the likelihood of becoming the target of future 
+              immoral behavior.
+          </p>
+        </div>
+
+        <button class="accordion">Moral Judgment, Stress, and Mindfulness<div class="accordion-right">Brooklyn College</div></button>
+        <div class="panel">
+          <p>
+              In a second line of research, I am currently developing a study that aims to 
+              determine whether automatic processes such as stress have a causal role in moral 
+              judgment or if they are merely the result of such judgment. This study utilizes 
+              false physiological feedback to test the hypothesis that perceived stress causes 
+              more severe moral judgment. In the experiment, participants wear headphones and 
+              are told that they are listening to their own heartbeat; in reality, they are 
+              randomly assigned to hear either a fast or normal heartbeat. I hypothesize that 
+              participants in the fast-heartbeat condition will attribute their perceived stress 
+              response to moral transgressions presented in a vignette, and thus judge them more 
+              severely. Further, I hypothesize that this effect will be moderated by mindfulness 
+              such that people high in mindfulness will be aware of and non-reactive to their 
+              physiological feedback, and thus judge less severely than those lower in mindfulness.
+          </p>
+        </div>
+
+        <button class="accordion">Mindfulness Meditation and Decision Making<div class="accordion-right">Stony Brook University</div></button>
+        <div class="panel">
+          <p>
+              In Stony Brook University’s Psychology Honors Program, I conducted independent 
+              research under the guidance of my mentor and research advisor Dr. Nancy Franklin. 
+              My honors project focused on whether mindfulness meditation can reduce inherent bias in 
+              decision-making. People have the tendeny to devalue future rewards, a phenomenon known as 
+              delay discounting. Delay discounting is widely used as a measure of impulsivity. Mindfulness 
+              meditation is a practice that emphasizes a present-focused, non-reactive awareness of one’s 
+              experiences; in essence, control over one’s attention and emotions. I hypothesized that a 
+              single session of guided mindfulness meditation would reduce delay discounting rates by 
+              causing people to be non-reactive to their impulses. The results of the study supported 
+              this idea.
+          </p>
+        </div>
+
+        <button class="accordion">Anger and Boundary Extension<div class="accordion-right">Stony Brook University</div></button>
+        <div class="panel">
+          <p>
+              As my introduction to psychology research as an undergraduate, I worked in Dr. Nancy 
+              Franklin’s memory lab. In the lab, I worked on a project that aimed to determine the 
+              effect of anger on memory through the use of a boundary extension paradigm. The primary 
+              hypothesis of this study was that anger, an approach-tendency emotion, causes people to 
+              focus on central aspects of experience, and would thus cause recognition of a zoomed-in 
+              version of an original image.
+          </p>
+        </div>
+        </br></br>
+
+
+    <script>
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var panel = this.nextElementSibling;
+          if (panel.style.maxHeight){
+            panel.style.maxHeight = null;
+          } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+          } 
+        });
+      }
+    </script>
 
     </body>
 </html>

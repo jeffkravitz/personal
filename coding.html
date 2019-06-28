@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jeff Kravitz</title>
+    <link href='https://fonts.googleapis.com/css?family=K2D' rel='stylesheet'>
+    <link rel="stylesheet" href="fontawesome/css/fontawesome.css">
+    <link rel="stylesheet" href="fontawesome/css/brands.css">
+    <link rel="stylesheet" href="fontawesome/css/solid.css">
+    <link rel="shortcut icon" href="docs/site_favicon.png">
+
+    <style>
+
+      body {
+        background-color: #f2f2f2;
+        color: #333333;
+        max-width: 800px;
+        margin: auto;
+        font-family: 'K2D';
+      }
+
+      .topnav {
+        color: #f2f2f2;
+        text-align: center;
+        padding: 0px 16px;
+        font-size: 17px;
+      }
+
+      .topnav {
+        overflow: hidden;
+        background-color: #333333;
+      }
+
+      .topnav a {
+      float: left;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+      }
+
+      .topnav c {
+      float: left;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+      }
+
+      .topnav a:hover {
+        background-color: #ddd;
+        color: #333333;
+      }
+
+      .topnav a.active {
+        background-color: #70ABAF;
+        color: #f2f2f2;
+      }
+
+      * {box-sizing: border-box}
+
+
+      .tab {
+        float: left;
+        border: 1px solid #333333;
+        background-color: #333333;
+        width: 30%;
+        height: 550px;
+      }
+
+      .tab button {
+        display: block;
+        background-color: #333333;
+        color: #f2f2f2;
+        padding: 22px 16px;
+        width: 100%;
+        border: solid;
+        border-color: #333333;
+        text-align: left;
+        cursor: pointer;
+        transition: 0.4s;
+        font-size: 17px;
+      }
+
+      .tab button:hover {
+        background-color: #ddd;
+        color: #333333;
+      }
+
+      .tab button.active {
+        background-color: #70ABAF;
+        color: #f2f2f2;
+      }
+
+      .tabcontent {
+        float: left;
+        padding: 0px 12px;
+        border: 3px solid #333333;
+        width: 70%;
+        border-left: none;
+        height: 550px;
+        overflow: scroll;
+      }
+
+      .tabcontent a{
+        text-decoration: none;
+        color: #70ABAF;
+      }
+
+      </style>
+    </head>
+
+    <body>
+
+        <div class="topnav">
+          <c>Kravitz</c>
+          <a href="index.html"><span class="fas fa-torii-gate"></span>&ensp; Home</a>
+          <a href="research.html"><span class="fas fa-brain"></span>&ensp; Research</a>
+          <a href="writing.html"><span class="fas fa-feather-alt"></span>&ensp; Writing</a>
+          <a class="active" href="coding.html"><span class="fas fa-code"></span>&ensp; Coding</a>
+          <a href="docs/Kravitz_CV.pdf"><span class="fas fa-file-alt"></span >&ensp; CV</a>
+        </div>
+
+        <div style="padding-top:10px; padding-left:22px;">
+            <h1>Coding</h1>
+        </div>
+        <hr color=#70ABAF>
+        <div class="article" style="padding-top:10px; padding-left:22px;">
+          <div>
+            Programming has become an increasingly critical skill with the advent of the replication 
+            crisis in psychology research. Statistical analyses coded in R and Matlab scripts 
+            facilitate analysis reproducibility and encourage open science practices, promoting both
+            collaboration and research transparency. These principles guide my research, and as such, 
+            I have cultivated both breadth and depth in programming skill.
+          </br></br>
+        </div>
+        </div>
+
+        <div class="tab">
+          <button class="tablinks" onclick="openCity(event, 'R, R Markdown')" id="defaultOpen">R, R Markdown</button>
+          <button class="tablinks" onclick="openCity(event, 'MATLAB')">MATLAB</button>
+          <button class="tablinks" onclick="openCity(event, 'C++')">C++</button>
+          <button class="tablinks" onclick="openCity(event, 'HTML, CSS, JavaScript')">HTML, CSS, JavaScript</button>
+        </div>
+          
+        <div id="R, R Markdown" class="tabcontent">
+          <h3>R, R Markdown</h3>
+          <p>
+              I learned R alongside statistical theory in my <i>Graduate Statistics 1</i>&ensp;course, and I 
+              completed a <i>Reproducibility in Research Using R</i> course in order to further strengthen 
+              my programming skills. This course also covered R Markdown, a markup language based on R 
+              that produces HTML. My work in this course includes: 
+              <ul>
+                <li>more than 30 <a href="https://jeffkravitz.github.io/Learn_R/Journal.html">solutions</a> to general programming challenges of varying difficulty</li>
+                <li>a <a href="https://jeffkravitz.github.io/Learn_R/Dictionary.html">dictionary</a> detailing a list of functions in R</li>
+                <li><a href="https://jeffkravitz.github.io/Learn_R/DataVis.html">code</a> that reproduces graphs using the ggplot2 package</li>
+                <li><a href="https://jeffkravitz.github.io/Learn_R/DataWrang.html">code</a> that cleans and organizes data using the dplyr package</li>
+                <li><a href="https://jeffkravitz.github.io/Learn_R/Stats.html">examples</a> of Monte Carlo simulations of various statistical tests</li>
+                <li>a <a href="https://jeffkravitz.github.io/Learn_R/FinalPaper.html">tutorial</a> that reviews the concept of mediation analyses and illustrates how to conduct these analyses in R</li>
+                <li>a <a href="https://jeffkravitz.github.io/Learn_R/Presentation.html#1">presentation</a> of this tutorial using the xaringan package</li>
+                <li>a <a href="https://github.com/jeffkravitz/Shiny_Web_App">shiny web app</a> that provides graphical representations of APA bibliographies by analyzing bibtex files</li>
+              </ul> 
+              I developed a website using R Markdown to 
+              <a href="https://jeffkravitz.github.io/Learn_R/">host this work online</a> using GitHub pages.
+              The source code for these projects is also available on
+              <a href="https://github.com/jeffkravitz">my GitHub account</a>. Using this various experience, 
+              I analyzed my thesis research in a reproducible script in R.
+          </p>
+        </div>
+          
+        <div id="MATLAB" class="tabcontent">
+          <h3>MATLAB</h3>
+          <p>
+            At Brooklyn College, I took an <i>Instrumentation in Psychology</i> course that introduced the 
+            basics of MATLAB and advanced techniques in Excel. This course covered basic script programming
+            including for/while loops, data plotting, basic statistical analyses, and function development.
+          </p>           
+        </div>
+        
+        <div id="C++" class="tabcontent">
+          <h3>C++</h3>
+          <p>
+            While I was a chemical engineering major at Stony Brook University, I took a <i>C++ 
+            for Engineers</i> course. This served as my introduction to object-oriented programming.
+            Although I have not directly used C++ in psychology research, the general programming principles of 
+            logic and syntax have helped me learn other more useful languages such as R and MATLAB.
+          </p>
+        </div>
+
+        <div id="HTML, CSS, JavaScript" class="tabcontent">
+          <h3>HTML, CSS, JavaScript</h3>
+          <p>
+            I am currently independently learning HTML, CSS, and JavaScript in order to continue developing my 
+            personal website. I am primarily learning these languages using free resources from YouTube, 
+            <a href="https://www.freecodecamp.org/">freeCodeCamp</a>, 
+            <a href="https://stackoverflow.com/">Stack Overflow</a> forums, and 
+            <a href="https://www.w3schools.com/">w3schools</a>.
+            </br></br>
+            One of the most important parts of research is dissemination of information both to other scientists 
+            and to the public. I believe that intuitive presentation and navigation plays an important role in
+            in this process. After all, if APA standardization aids structure and cohesiveness in publications, 
+            why wouldn't intuitive web design function in a similar way?
+          </p>
+        </div>
+
+        </br></br></br></br></br></br></br></br></br></br></br></br></br></br>
+        </br></br></br></br></br></br></br></br></br></br></br></br></br>
+
+
+          <script>
+            function openCity(evt, cityName) {
+              var i, tabcontent, tablinks;
+              tabcontent = document.getElementsByClassName("tabcontent");
+              for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+              }
+              tablinks = document.getElementsByClassName("tablinks");
+              for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+              }
+              document.getElementById(cityName).style.display = "block";
+              evt.currentTarget.className += " active";
+            }
+            document.getElementById("defaultOpen").click();
+          </script>
+        
+
+    </body>
+</html>
