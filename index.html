@@ -77,6 +77,15 @@
       .icon a:hover{
         color: #70ABAF;
       }
+
+      .zoom {
+        transition: transform .2s; /* Animation */
+        margin: 0 auto;
+      }
+
+      .zoom:hover {
+        transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+      }
       </style>
 
     </head>
@@ -121,9 +130,9 @@
             <div style="font-size:18px">Social Psychologist</div>
         </br></br>
             <div class="icon">
-              <a class='fas fa-paper-plane' style='font-size:24px' href="mailto:jkravitz.edu@gmail.com"></a> &ensp;
-              <a class='fab fa-github' style='font-size:24px' href="https://github.com/jeffkravitz"></a> &ensp;
-              <a class='fab fa-linkedin-in' style='font-size:24px' href="https://www.linkedin.com/in/jeffrey-kravitz-922253141/"></a>
+              <a class='fas fa-paper-plane zoom' style='font-size:24px' href="mailto:jkravitz.edu@gmail.com"></a> &ensp;
+              <a class='fab fa-github zoom' style='font-size:24px' href="https://github.com/jeffkravitz"></a> &ensp;
+              <a class='fab fa-linkedin-in zoom' style='font-size:24px' href="https://www.linkedin.com/in/jeffrey-kravitz-922253141/"></a>
             </div>
         </div>
       </div>
