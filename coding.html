@@ -119,23 +119,31 @@
         <div class="topnav">
           <c>Kravitz</c>
           <a href="index.html"><span class="fas fa-torii-gate"></span>&ensp; Home</a>
+          <a class="active" href="coding.html"><span class="fas fa-code"></span>&ensp; Coding</a>
           <a href="research.html"><span class="fas fa-brain"></span>&ensp; Research</a>
           <a href="publications.html"><span class="fas fa-feather-alt"></span>&ensp; Pubs</a>
-          <a class="active" href="coding.html"><span class="fas fa-code"></span>&ensp; Coding</a>
-          <a href="docs/Kravitz_CV.pdf"><span class="fas fa-file-alt"></span >&ensp; CV</a>
         </div>
 
         <div style="padding-top:10px; padding-left:22px;">
-            <h1>Coding</h1>
+            <h1>Programming in Psychology</h1>
         </div>
         <hr color=#70ABAF>
         <div class="article" style="padding-top:10px; padding-left:22px;">
           <div>
-            Programming has become an increasingly critical skill with the advent of the replication 
-            crisis in psychology research. Statistical analyses coded in R and MATLAB scripts 
-            facilitate analysis reproducibility and encourage open science practices, promoting both
-            collaboration and research transparency. These principles guide my research, and as such, 
-            I have cultivated both breadth and depth in programming skill.
+            Many people think of psychology as a soft science, pointing to the subjectivity of the 
+            phenomena that the discipline aims to explain. And indeed, it is more difficult to 
+            pin down an objective truth about subjective experience, especially when considering 
+            the great diversity of people and their circumstances. In order to function as a science, 
+            Psychology research is reliant on other hard sciences to provide methods that one can use 
+            to test theories objectively. For example, statistical analyses must be used to determine 
+            whether experiment results are reliable or just due to chance. Experiment methods, especially 
+            in the disciplines of neuroscience and psychophysics, must be programmed as tasks completed 
+            on computers to ensure that all subjects receive the exact same stimuli and conditions. 
+          </br></br>
+            Due to the variiety of technical proficiency that psychology research requires, over the 
+            the course of my career I have cultivated experience in a variety of programming languages. 
+            I mainly used Python for experiment porgramming, and R and MATLAB for statistical analyses. 
+            In addition, I have personal projects programmed in C++. Read below to find out more!
           </br></br>
         </div>
         </div>
@@ -144,6 +152,7 @@
           <button class="tablinks" onclick="openCity(event, 'Python')" id="defaultOpen">Python</button>
           <button class="tablinks" onclick="openCity(event, 'R')" id="defaultOpen">R</button>
           <button class="tablinks" onclick="openCity(event, 'MATLAB')">MATLAB</button>
+          <button class="tablinks" onclick="openCity(event, 'C++')">C++</button>
           <button class="tablinks" onclick="openCity(event, 'HTML & JavaScript')">HTML & JavaScript</button>
         </div>
 
@@ -158,7 +167,7 @@
             of Psychiatry and New York State Psychiatric Institute. My code delivers milisecond-precise stimuli, 
             outputs data and log files, ensures compatibility with eye tracking hardware, offers a range of quality of 
             life utility, and is well documented. This project also includes some bash shell scripting for additional utility. 
-            Check it out <a href="https://github.com/jeffkravitz/RSVP_pRF">here on my Github!</a>
+            Check it out <a href="https://github.com/jeffkravitz/RSVP_pRF">here</a> on my Github!
           </p>
           <h3>Processing Pipeline for Aphantasia Data</h3>
           <p>
@@ -168,12 +177,20 @@
             a series of cognitive tasks designed to determine the magnitude of cognitive deficit associated 
             with the condition known as Aphantasia. 
           </p>
-          <h3>Experiment Scripts for Multi-Item Memory Guided Saccade Task</h3>
+          <h3>Experiment Script for Multi-Item Memory Guided Saccade Task</h3>
           <p>
-            I am developing an experiment script for a project that is designed to measure the impact of Transcranial 
+            I developed an experiment script for a project that is designed to measure the impact of Transcranial 
             Magnetic Stimulation (TMS) on a subject's ability to remember the location of several stimuli. My code delivers 
             milisecond-precise stimuli, outputs data and log files, ensures compatibility with eye tracking hardware and 
             TMS trigger software, and ensures smooth processing and analysis of multiple memory guided saccade data.
+          </p>
+          <h3>ESPN Fantasy Football</h3>
+          <p>
+            One of my personal projects analyzes various aspects of fantasy football performance. My 
+            code utlizes ESPN's fantasy sports API to retrieve JSON data, which I then 
+            analyze with with Python's Pandas package. Unlike most other fantasy football tools, my 
+            project analyzes performance of the fantasy manager rather than that of the fantasy player. The 
+            goal of this project is to give insight into and improve a manager's decision making.
           </p>
           <h3>Anaconda</h3>
           <p>
@@ -214,25 +231,26 @@
         </div>
           
         <div id="MATLAB" class="tabcontent">
-          <h3>Analyses of Fixation Oriented Eye-Tracking Data</h3>
-          <p>
-            After programming the experimental Rapid Serial Visual Presentation (RSVP) method for stimulating the 
-            visual field, I expanded the scope of the Curtis Lab's iEye eye-tracking software to analyze data 
-            in which the goal is to remain fixated at the center of the screen for the entirety of the experiment,
-            as in the RSVP task. My code added several features to iEye that optimized it for analysis of RSVP 
-            eye-tracking data, including graphical depictions of stimulus movement with resepect to eye movement, 
-            summarization of TR selection via various parameters, and introduction of a new calibration method to 
-            the software.
-          </p>   
-          <h3>Analyses of Visually Guided Saccade Eye-Tracking Data</h3>
+          <h3>Analysis of Visually Guided Saccade Eye-Tracking Data</h3>
           <p>
             In order to process and analyze visually guided saccade data from an old experiment in the lab, I added 
-            functionality to the Curtis Lab's iEye eye-tracking analysis MATLAB software, which was configured
+            functionality to our lab's iEye eye-tracking analysis MATLAB software, which was configured
             to analyze only memory guided saccade data. Because this experiment contained both memory and 
             visually guided saccade data, I wrote code that classified the type of saccade based on features 
             of each individual saccade, and re-configured each of the analyses to function properly for data 
             containing both types of saccades. For my work on this project, I was acknowledged in 
-            <a href="docs/Rahmati_DeSimone_Curtis_Sreenivasan_2020.pdf">this publication</a> from our lab.
+            <a href="https://static1.squarespace.com/static/59d0fb1d3e00be69b7bda6fa/t/602172f210abb41c444f8445/1612804852710/Rahmati_DeSimone_Curtis_Sreenivasan_JNeurosci2020.pdf">this publication</a> from our lab.
+          </p>           
+        </div>
+
+        <div id="C++" class="tabcontent">
+          <h3>Game Development with Unreal Engine</h3>
+          <p>
+            In my free time, I work with a small team to develop video games. I use C++ and Unreal Engine to 
+            design and implement architecture that manages player input and state, executes callback functions 
+            upon event triggers, and creates a template system that allows game designers to drag and drop 
+            C++ functionality to create unique content. To allow for collaboration between artists, designers, 
+            and developers, I setup and manage Perforce source control hosted on Amazon Web Services.
           </p>           
         </div>
 
